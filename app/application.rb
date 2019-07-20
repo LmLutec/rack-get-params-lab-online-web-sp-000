@@ -21,7 +21,9 @@ class Application
         resp.write "#{item}\n"
           end 
     elsif req.path.match(/add/)
-      
+      @@items.each do |item|
+        resp.write "#{item}\n"
+      end 
       else
         resp.write "Your cart is empty"
       end 
