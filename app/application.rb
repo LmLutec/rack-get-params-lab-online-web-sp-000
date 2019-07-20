@@ -22,7 +22,7 @@ class Application
           end 
     elsif req.path.match(/add/)
       @@items.each do |item|
-        resp.write "#{item}\n"
+        @@cart << item 
       end 
       else
         resp.write "Your cart is empty"
