@@ -23,7 +23,6 @@ class Application
     elsif req.path.match(/add/)
       add_item = req.params["item"]
       resp.write handle_search(add_item)
-      end 
       else
         resp.write "Your cart is empty"
       end 
